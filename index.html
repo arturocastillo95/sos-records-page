@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
-
-    <title>Sos Music Records</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Css import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/9d00259e5b.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- js import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Sos Music Records</title>
+
 </head>
 <body>
     <div class="site-logo">
@@ -21,16 +30,105 @@
     </div>
     <div class="container">
         <div class="flex-center">
-            <i class="fa fa-youtube fa-2x icon-3d"></i>
             <i class="fa fa-spotify fa-2x icon-3d"></i>
+            <i class="fa fa-youtube fa-2x icon-3d"></i>
+            <i class="fa fa-apple fa-2x icon-3d"></i>
             <i class="fa fa-instagram fa-2x icon-3d"></i>
-            <i class="fa fa-whatsapp fa-2x icon-3d"></i>
           </div>
         <!-- <h1 class="header">Hello World!</h1> -->
 
-        <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=APELISLINMUSIC" frameborder="0" allowfullscreen></iframe> 
+        <div class="buttons-top">
+            <button class="btn">Artists</button>
+            <button class="btn">Music</button>
         </div>
+
+        <div class="videowrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qoTVOeC0Og4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+                <div class="views-row">
+                    <div class="views-field views-field-image">
+                        <div class="field-content">
+                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="views-field views-field-title">
+                        <span class="field-content">
+                            Artist 1
+                        </span> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1>Title</h1>
 
 
     </div>
@@ -42,4 +140,30 @@
     </div>
 
 </body>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                769: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+
 </html>
+
+
