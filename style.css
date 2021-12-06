@@ -11,7 +11,7 @@ html  {
 body {
     font-family: 'Roboto', sans-serif;
     color: #f3f3f3;
-    background-color: black;
+    background-color: #252525;
     min-height: 100%;
     width: 100%;
     line-height: 1.6;
@@ -168,7 +168,6 @@ overflow: hidden; }
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin-bottom: 2rem;
   }
 
   .buttons-top button {
@@ -179,7 +178,7 @@ overflow: hidden; }
       border-color: #f3f3f3;
       border-style: solid;
       border-width: 1px;
-      margin: 2rem;
+      margin: 0 1rem;
   }
 
   .btn {
@@ -205,7 +204,6 @@ overflow: hidden; }
 
 .owl-carousel {
     display: flex;
-    padding-top: 4rem;
 }
 
 .owl-carousel .item {
@@ -231,13 +229,39 @@ overflow: hidden; }
     margin: 12px 0;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+.container > div {
+    margin-top: 3rem;
+}
+
+.container > iframe {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
     .views-field-image{
         max-width: 100%;
     }
-    
 
+    .site-logo img {
+        width: 200px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .views-field-image{
+        max-width: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -245,5 +269,12 @@ overflow: hidden; }
     .container {
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    .views-field-image{
+        max-width: 100%;
+    }
+
+    .site-logo img {
+        width: 250px;
     }
 }
