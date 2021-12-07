@@ -37,7 +37,8 @@ body {
 
 .background {
     position: absolute;
-    background-color: #171717;
+    background: linear-gradient(124deg, rgba(23,23,23,1) 0%, rgba(25,25,25,1) 100%);
+    /* background-color: #171717; */
     height: 100%;
     top: 0;
     left: 0;
@@ -119,7 +120,7 @@ overflow: hidden; }
 }
 .icon-3d {
     padding: 30px;
-    /* -webkit-animation: icon3d 200ms 10; */
+    -webkit-animation: icon3d 200ms 10;
     animation: icon3d 200ms 10;
     color: #f3f3f3;
 }
