@@ -43,7 +43,7 @@
         </div>
 
         <div class="videowrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qoTVOeC0Og4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=APELISLINMUSIC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="owl-carousel owl-theme container-section">
@@ -51,7 +51,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-1.jpg" alt="">
+                            <a class="has_link"href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-1.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -63,7 +65,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-2.jpg" alt="">
+                            <a class="has_link" href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-2.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -77,7 +81,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-3.jpg" alt="">
+                            <a class="has_link"href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-3.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -89,7 +95,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-4.jpg" alt="">
+                            <a class="has_link" href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-4.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -103,7 +111,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-5.jpg" alt="">
+                            <a class="has_link"href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-5.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -115,7 +125,9 @@
                 <div class="views-row">
                     <div class="views-field views-field-image">
                         <div class="field-content">
-                            <img class="image-responsive" src="images/artist-6.jpg" alt="">
+                            <a class="has_link" href="">
+                                <figure class="rgb-split js-rgb-split"><img class="image-responsive" src="images/artist-6.jpg" alt=""></figure>
+                            </a>
                         </div>
                     </div>
                     <div class="views-field views-field-title">
@@ -125,6 +137,7 @@
                     </div>
                 </div>
             </div>
+            
 
         </div>
 
@@ -161,7 +174,22 @@
                 }
             }
         });
-    });
+        document.querySelectorAll('.js-rgb-split').forEach(element => {
+        const div = document.createElement('div');
+        div.innerHTML = element.innerHTML;
+        element.innerHTML = '';
+
+        ['b', 'g'].forEach(color => {
+            const clone = div.cloneNode(true);
+            clone.classList.add(color);
+            clone.setAttribute('aria-hidden', 'true');
+            element.appendChild(clone);
+        });
+
+        div.classList.add('r');
+        element.appendChild(div);
+        });
+        });
 </script>
 
 </html>
