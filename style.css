@@ -20,7 +20,7 @@ body {
 }
 
 .site-logo {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 0;
     width: 280px;
     margin: auto;
@@ -245,6 +245,12 @@ overflow: hidden; }
 .has_link {
     text-decoration: none;
     color: #f3f3f3;
+}
+
+.footer {
+    margin: 0 !important;
+    padding-bottom: 2rem;
+    font-weight: 200;
 }
 
 /* Extra small devices (phones, 600px and down) */
