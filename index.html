@@ -26,8 +26,8 @@
 
 </head>
 <body>
-    <div class="site-logo">
-        <img src="images/sos_logo.png" alt="">
+    <div id="logo-anim" class="site-logo">
+        <!-- <img src="images/sos_logo.png" alt=""> -->
     </div>
     <div class="container">
         <div class="flex-center">
@@ -157,6 +157,8 @@
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js" integrity="sha512-srGxQe2w7s50+5/nNgEVKYtBm15zRylJwdjxYnGEZr3mmHFJKFjA/ImA2OKizVzoIDX8XISMHDI1+az9pnumbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -196,6 +198,15 @@
         div.classList.add('r');
         element.appendChild(div);
         });
+
+        var logo_anim = bodymovin.loadAnimation({
+		container: document.getElementById('logo-anim'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: 'https://assets3.lottiefiles.com/packages/lf20_egww5gza.json'
+		});
+
     });
 
     window.particlesJS.load('particles-js', 'particles.json', function() {
