@@ -291,6 +291,7 @@ overflow: hidden; }
 
     .site-logo img {
         width: 250px;
+        margin-bottom: 1.5rem;
     }
 }
 
