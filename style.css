@@ -341,3 +341,12 @@ overflow: hidden; }
   .rgb-split:hover .b {
     transform: translate(16px);
   }
+
+  h2 a {
+    color: #f3f3f3;
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    text-decoration: underline;
+  }
