@@ -35,38 +35,6 @@
         <img src="images/sos_logo.png" alt="">
     </div>
 
-    <!-- MODAL -->
-    <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            <i class="fa fa-window-close fa-2x icon-3d"></i>
-        </div>
-            
-        <div class="modal-content">
-            <div class="label-buttons">
-                <a target="_blank" href="https://open.spotify.com/playlist/4M6A0n4x79o1pnL4x1BY5K?si=4eb3bedd50fc4bb9" class="label-btn">
-                    <div class="label-btn-content">
-                        <i class="fa fa-spotify fa-lg"></i>
-                        <p>Sos Music Releases </p>
-                    </div>
-                </a>
-                <a target="_blank" href="https://open.spotify.com/playlist/2HDCzseAyWqu40vArGBMEe?si=0d424e265dd2409b" class="label-btn">
-                    <div class="label-btn-content">
-                        <i class="fa fa-spotify fa-lg"></i>
-                        <p>Lost in Desert</p>
-                    </div>
-                </a>
-                <a target="_blank" href="https://open.spotify.com/playlist/7yt3sjPza3cFMY0rgnNTo3?si=324bdbca387a4c03" class="label-btn">
-                    <div class="label-btn-content">
-                        <i class="fa fa-spotify fa-lg"></i>
-                        <p>Sound of Soul</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
     <div class="container">
         <div class="flex-center">
             <a target="_blank" href="https://spoti.fi/3284Wd1"><i class="fa fa-spotify fa-2x icon-3d"></i></a>
@@ -89,6 +57,14 @@
         <div class="videowrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeUeLlo3Lx05biZjfAdGp43mBmtr5NnZJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
+        <div class="youtube-list-section">
+            <div class="youtube-carousel">
+
+
+            </div>
+        </div>
+
 
         <div id="artist-section">
             <!-- <div class="owl-carousel owl-theme">
@@ -215,14 +191,67 @@
 
 </body>
 
-
 <!-- Import the modal JS dependencies -->
-<script src="js/animatedModal.min.js"></script>
+<script defer src="js/animatedModal.min.js"></script>
+
+    <!-- MODAL -->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            <i class="fa fa-window-close fa-2x icon-3d"></i>
+        </div>
+            
+        <div class="modal-content">
+            <div class="label-buttons">
+                <a target="_blank" href="https://open.spotify.com/playlist/4M6A0n4x79o1pnL4x1BY5K?si=4eb3bedd50fc4bb9" class="label-btn">
+                    <div class="label-btn-content">
+                        <i class="fa fa-spotify fa-lg"></i>
+                        <p>Sos Music Releases </p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://open.spotify.com/playlist/2HDCzseAyWqu40vArGBMEe?si=0d424e265dd2409b" class="label-btn">
+                    <div class="label-btn-content">
+                        <i class="fa fa-spotify fa-lg"></i>
+                        <p>Lost in Desert</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://open.spotify.com/playlist/7yt3sjPza3cFMY0rgnNTo3?si=324bdbca387a4c03" class="label-btn">
+                    <div class="label-btn-content">
+                        <i class="fa fa-spotify fa-lg"></i>
+                        <p>Sound of Soul</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
 
 
 <script>
     $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
+        // $(".owl-carousel").owlCarousel({
+        //     loop:true,
+        //     margin:20,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         480: {
+        //             items: 1
+        //         },
+        //         769: {
+        //             items: 2
+        //         },
+        //         992: {
+        //             items: 3
+        //         }
+        //     },
+        //     nav: true,
+        //     navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+        // });
+
+        $(".youtube-carousel").owlCarousel({
             loop:true,
             margin:20,
             responsive: {
