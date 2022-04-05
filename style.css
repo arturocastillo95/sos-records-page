@@ -263,9 +263,28 @@ overflow: hidden; }
         max-width: 100%;
     }
 
-    .site-logo img {
+    .site-logo {
         width: 200px;
+        margin-bottom: 2rem;
     }
+
+    .site-logo img {
+        width: 180px;
+    }
+
+    .icon-3d {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .buttons-top {
+        margin-top: 3rem !important;
+    }
+
+    .footer-links {
+        font-size: .8rem !important;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -412,7 +431,7 @@ overflow: hidden; }
 .label-btn-content {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 
 }
