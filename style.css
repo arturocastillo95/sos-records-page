@@ -22,12 +22,12 @@ body {
 .site-logo {
     padding-top: 2rem;
     padding-bottom: 0;
-    width: 280px;
+    width: 200px;
     margin: auto;
 }
 
 .site-logo img {
-    width: 280px;
+    width: 200px;
 }
 
 .container {
@@ -290,7 +290,7 @@ overflow: hidden; }
     }
 
     .site-logo img {
-        width: 250px;
+        width: 200px;
         margin-bottom: 1.5rem;
     }
 }
