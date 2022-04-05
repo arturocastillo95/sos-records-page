@@ -396,11 +396,12 @@ overflow: hidden; }
 }
 
 .label-btn {
+    position: relative;
     margin: 1rem;
     border: #f3f3f3 solid 1px;
     padding: 1rem;
     width: 300px;
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -408,7 +409,15 @@ overflow: hidden; }
     text-decoration: none;
 }
 
-.label-btn .fa {
+.label-btn-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.label-btn i {
     margin-right: 1rem;
 }
 
