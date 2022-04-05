@@ -22,6 +22,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+
+    <!-- Modal dependencies -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
+
     <title>Sos Music Records</title>
 
 </head>
@@ -29,23 +34,38 @@
     <div id="" class="site-logo">
         <img src="images/sos_logo.png" alt="">
     </div>
+
+    <!-- MODAL -->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            <i class="fa fa-window-close fa-2x icon-3d"></i>
+        </div>
+            
+        <div class="modal-content">
+            Here goes the label links
+        </div>
+
+    </div>
+
     <div class="container">
         <div class="flex-center">
-            <a href="https://spoti.fi/3284Wd1"><i class="fa fa-spotify fa-2x icon-3d"></i></a>
-            <a href="https://www.instagram.com/sosmusichq/"><i class="fa fa-instagram fa-2x icon-3d"></i></a>
-            <a href="https://www.facebook.com/sosmusichq"><i class="fa fa-facebook fa-2x icon-3d"></i></a>
-            <a href="https://soundcloud.com/sosmusichq"><i class="fa fa-soundcloud fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://spoti.fi/3284Wd1"><i class="fa fa-spotify fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://www.instagram.com/sosmusichq/"><i class="fa fa-instagram fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://www.facebook.com/sosmusichq"><i class="fa fa-facebook fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://soundcloud.com/sosmusichq"><i class="fa fa-soundcloud fa-2x icon-3d"></i></a>
             <!-- <a href="https://www.tiktok.com/@sosmusichq"><i class="fa fa-tiktok fa-2x icon-3d"></i></a> -->
-            <a href="https://www.youtube.com/c/SosMusicHQ/featured"><i class="fa fa-youtube fa-2x icon-3d"></i></a>
-            <a href="https://twitter.com/SosmusicHQ"><i class="fa fa-twitter fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://www.youtube.com/c/SosMusicHQ/featured"><i class="fa fa-youtube fa-2x icon-3d"></i></a>
+            <a target="_blank" href="https://twitter.com/SosmusicHQ"><i class="fa fa-twitter fa-2x icon-3d"></i></a>
         </div>
         <!-- <h1 class="header">Hello World!</h1> -->
 
         <div class="buttons-top">
             <!-- <a href="#artist-section" class="btn">Artists</a> -->
             <a class="btn">Music</a>
-            <a class="btn">Labels</a>
+            <a id="labels-modal" href="#animatedModal" class="btn">Labels</a>
         </div>
+
 
         <div class="videowrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeUeLlo3Lx05biZjfAdGp43mBmtr5NnZJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -171,6 +191,11 @@
 
 </body>
 
+
+<!-- Import the modal JS dependencies -->
+<script src="js/animatedModal.min.js"></script>
+
+
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -215,6 +240,14 @@
         var date = new Date();
         var year = date.getFullYear();
         document.getElementById("current_year").innerHTML = year;
+
+        // Get the modal
+        $("#labels-modal").animatedModal({
+            color: '#252525',
+            animatedIn: 'fadeInUp',
+            animatedOut: 'fadeOutDown',
+            animationDuration: '0.4s',
+        });
 
     });
 

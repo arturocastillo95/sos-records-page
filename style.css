@@ -364,3 +364,26 @@ overflow: hidden; }
 .footer p {
     display: inline;
 }
+
+/* .modal-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.close-animatedModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    /* background: #f3f3f3; */
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.modal-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
