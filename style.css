@@ -57,7 +57,7 @@ h1 {
     text-align: center;    
 }
 
-.lines {
+/* .lines {
 position: absolute;
 top: 0;
 left: 0;
@@ -99,7 +99,7 @@ overflow: hidden; }
 0% {
     top: -50%; }
 100% {
-    top: 110%; } }
+    top: 110%; } } */
 
 
 
@@ -344,7 +344,7 @@ overflow: hidden; }
   }
 
 #submit-demo {
-    margin: 1rem;
+    margin: 2rem 0 2rem 0;; 
 }
 
 #submit-demo a {
@@ -357,9 +357,9 @@ overflow: hidden; }
     text-decoration: underline;
   }
 
-  #current_year {
-      display: inline;
-  }
+#current_year {
+    display: inline;
+}
 
 .footer p {
     display: inline;
@@ -386,4 +386,64 @@ overflow: hidden; }
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.label-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-btn {
+    margin: 1rem;
+    border: #f3f3f3 solid 1px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.label-btn .fa {
+    margin-right: 1rem;
+}
+
+.footer-links {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.footer-links a {
+    color: #f3f3f3;
+    text-decoration: underline;
+    margin: .8rem;
+}
+
+tos-body {
+    min-height: 100%;
+}
+
+.tos {
+    padding-bottom: 4rem;
+}
+
+.tos h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 2rem 0;  
+}
+
+.tos a {
+    color: #f3f3f3;
+}
+
+.tos ul {
+    margin: 2rem 0;
+    list-style-position: inside;
 }
