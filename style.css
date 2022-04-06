@@ -5,14 +5,16 @@
 }
   
 html  {
-    height: 100%;
+    /* height: 100%; */
     scroll-behavior: smooth;
 }
   
 body {
     font-family: 'Roboto', sans-serif;
     color: #f3f3f3;
-    background-color: #252525;
+    /* background-color: #252525; */
+    background: rgb(0,0,0);
+    /* background: linear-gradient(149deg, rgba(0,0,0,1) 0%, rgba(62,62,62,1) 100%); */
     min-height: 100%;
     width: 100%;
     line-height: 1.6;
@@ -36,16 +38,34 @@ body {
     text-align: center;
 }
 
-.background {
+/* Set the video as .background */
+.background-video {
     position: absolute;
-    /* background: linear-gradient(124deg, rgba(23,23,23,1) 0%, rgba(25,25,25,1) 100%); */
-    /* background-color: #f00; */
-    height: 100%;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: -100;
+    overflow: hidden;
 }
+
+.background-video video {
+    top: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 25%;
+}
+
+/* .background-color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(23,23,23);
+    background: linear-gradient(149deg, rgba(23,23,23,1) 0%, rgba(62,62,62,0.46682422969187676) 100%);
+    z-index: -50;
+} */
 
 h1 {
     font-size: 3rem;
@@ -56,52 +76,6 @@ h1 {
 .header {
     text-align: center;    
 }
-
-/* .lines {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-height: 100%;
-margin: auto;
-width: 90vw; }
-
-.line {
-position: absolute;
-width: 1px;
-height: 100%;
-top: 0;
-left: 50%;
-background: rgba(255, 255, 255, 0);
-overflow: hidden; }
-.line::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-    animation: drop 7s 0s infinite;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97); }
-.line:nth-child(1) {
-    margin-left: -25%; }
-    .line:nth-child(1)::after {
-    animation-delay: 2s; }
-.line:nth-child(3) {
-    margin-left: 25%; }
-    .line:nth-child(3)::after {
-    animation-delay: 2.5s; }
-
-@keyframes drop {
-0% {
-    top: -50%; }
-100% {
-    top: 110%; } } */
-
-
 
 .flex-center {
     margin-top: 1rem !important;

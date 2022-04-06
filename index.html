@@ -237,19 +237,9 @@
         </div>
     </div>
 
-
-    <div id="particles-js" class="background">
-
-    </div>
-
-</body>
-
-<!-- Import the modal JS dependencies -->
-<script defer src="js/animatedModal.min.js"></script>
-
     <!-- MODAL -->
     <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+
         <div class="close-animatedModal"> 
             <i class="fa fa-window-close fa-2x icon-3d"></i>
         </div>
@@ -278,6 +268,19 @@
         </div>
 
     </div>
+
+    <div class="background-color-overlay"></div>
+
+    <div class="background-video">
+        <video autoplay muted loop preload="none" id="myVideo">
+            <source src="bg-loop-2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+
+<!-- Import the modal JS dependencies -->
+<script defer src="js/animatedModal.min.js"></script>
 
 <script>
     $(document).ready(function(){
@@ -351,7 +354,7 @@
 
         // Get the modal
         $("#labels-modal").animatedModal({
-            color: '#252525',
+            color: 'rgba(37, 37, 37, .92)',
             animatedIn: 'fadeInUp',
             animatedOut: 'fadeOutDown',
             animationDuration: '0.4s',
@@ -374,9 +377,9 @@
 
     });
 
-    window.particlesJS.load('particles-js', 'particles.json', function() {
-        console.log('callback - particles.js config loaded');
-    });
+    // window.particlesJS.load('particles-js', 'particles.json', function() {
+    //     console.log('callback - particles.js config loaded');
+    // });
 
 </script>
 
