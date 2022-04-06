@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #f3f3f3;
     /* background-color: #252525; */
-    background: rgb(0,0,0);
+    background: #171717;
     /* background: linear-gradient(149deg, rgba(0,0,0,1) 0%, rgba(62,62,62,1) 100%); */
     min-height: 100%;
     width: 100%;
@@ -287,6 +287,14 @@ h1 {
     }
     .views-field-image{
         max-width: 100%;
+    }
+
+    .buttons-top {
+        margin-top: 3rem !important;
+    }
+
+    .site-logo {
+        margin-bottom: 2rem;
     }
 }
 
