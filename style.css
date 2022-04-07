@@ -100,7 +100,7 @@ h1 {
     animation: icon3d 200ms 10;
     color: #f3f3f3;
 }
-.icon-3d:hover {
+/* .icon-3d:hover {
     -webkit-animation: icon3d 200ms infinite;
     animation: icon3d 200ms infinite;
     cursor: pointer;
@@ -121,7 +121,7 @@ h1 {
     100% {
         text-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
     }
-}
+} */
 
 .container {
     max-width: 960px;
