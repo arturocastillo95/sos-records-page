@@ -395,13 +395,19 @@ h1 {
     align-items: center;
 } */
 
-.close-animatedModal {
+.close-animatedModal,
+.close-music-animatedModal {
     position: absolute;
     top: 0;
     right: 0;
     padding: 1rem;
     /* background: #f3f3f3; */
     border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.close-animatedModal:hover,
+.close-music-animatedModal:hover {
+    cursor: pointer;
 }
 
 .modal-content {
@@ -464,6 +470,25 @@ h1 {
 
 }
 
+.label-btn.youtube::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    z-index: -1;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.label-btn.youtube:hover::before,
+.label-btn.youtube:focus::before {
+    transform: scaleX(1);
+}
 
 .label-btn:hover::before,
 .label-btn:focus::before {

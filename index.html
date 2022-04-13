@@ -51,7 +51,7 @@
 
         <div class="buttons-top">
             <!-- <a href="#artist-section" class="btn">Artists</a> -->
-            <a class="btn" href="#music">Music</a>
+            <a id="music-modal" class="btn" href="#music-animatedModal">Music</a>
             <a id="labels-modal" href="#animatedModal" class="btn">Labels</a>
         </div>
 
@@ -219,6 +219,67 @@
 
     </div>
 
+    <!-- END MODAL -->
+
+    <div id="music-animatedModal">
+
+        <div class="close-music-animatedModal"> 
+            <i class="fa fa-window-close fa-2x icon-3d"></i>
+        </div>
+            
+        <div class="modal-content">
+
+            <div class="label-buttons">
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCh2gZBX_qZ5qjkPY8x3bSSA" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Sound of Soul</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCxvNQktOZxrLg3cwkkyLs7g" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Sos Music Lounge</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/user/Apelislin" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Apelislin</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCZLiD7Hxw13-yzYKTuY-yLw" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Lost In Desert</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCTCu2sNfAfuEDuV0VViJ4UQ" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Sos Music HQ</p>
+                    </div>
+                </a>
+                
+                <!-- <a target="_blank" href="https://open.spotify.com/playlist/0ElSHsy5TziogcE09zvgRz?si=8f05391725ac4021" class="label-btn youtube">
+                    <div class="label-btn-content">
+                        <i class="fa fa-youtube-play fa-lg"></i>
+                        <p>Dope Music Records</p>
+                    </div>
+                </a> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     <div class="background-color-overlay"></div>
 
     <div class="background-video">
@@ -260,23 +321,6 @@
             // dots: true,
         });
 
-
-        document.querySelectorAll('.js-rgb-split').forEach(element => {
-        const div = document.createElement('div');
-        div.innerHTML = element.innerHTML;
-        element.innerHTML = '';
-
-        ['b', 'g'].forEach(color => {
-            const clone = div.cloneNode(true);
-            clone.classList.add(color);
-            clone.setAttribute('aria-hidden', 'true');
-            element.appendChild(clone);
-        });
-
-        div.classList.add('r');
-        element.appendChild(div);
-        });
-
         // Get the current year
         var date = new Date();
         var year = date.getFullYear();
@@ -290,26 +334,14 @@
             animationDuration: '0.4s',
         });
 
-        // const spotify_lists = [
-        //     'https://open.spotify.com/embed/playlist/0YyIsLbzZv0XN3Dy41gMoV?utm_source=generator',
-        //     'https://open.spotify.com/embed/playlist/3kHScK53WGqBXZR3weMPqw?utm_source=generator',
-        //     'https://open.spotify.com/embed/playlist/7yt3sjPza3cFMY0rgnNTo3?utm_source=generator',
-        //     'https://open.spotify.com/embed/playlist/4M6A0n4x79o1pnL4x1BY5K?utm_source=generator',
-        //     'https://open.spotify.com/embed/playlist/6WCYEHl77YhQ00vQbPECLk?utm_source=generator',
-        //     'https://open.spotify.com/embed/playlist/2HDCzseAyWqu40vArGBMEe?utm_source=generator'
-        // ];
-
-        // const spotify_list_index = Math.floor(Math.random() * spotify_lists.length);
-        // const spotify_list = spotify_lists[spotify_list_index];
-
-        // $("#spotify-iframe").attr("src", spotify_list);
-
+        $("#music-modal").animatedModal({
+            color: 'rgba(37, 37, 37, .85)',
+            animatedIn: 'fadeInUp',
+            animatedOut: 'fadeOutDown',
+            animationDuration: '0.4s',
+        });
 
     });
-
-    // window.particlesJS.load('particles-js', 'particles.json', function() {
-    //     console.log('callback - particles.js config loaded');
-    // });
 
 </script>
 
