@@ -208,7 +208,7 @@ h1 {
 }
 
 .channel-image {
-    max-width: 130px;
+    max-width: 110px;
     border-radius: 50%;
 
 }
@@ -216,7 +216,6 @@ h1 {
 .views-field-title {
     font-size: 1.1rem;
     font-weight: 100;
-    text-transform: uppercase;
     margin: 1rem 0 0rem 0;
 }
 
